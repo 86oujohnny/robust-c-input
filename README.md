@@ -46,7 +46,7 @@ Prompts the user for a string:
 ---
 
 ## Example
-
+Using the functions defined in this project:
 ```c
 #include <stdio.h>
 #include <stdlib.h>
