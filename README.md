@@ -68,13 +68,15 @@ int main(void)
 ```
 ## Memory Management
 
-get_string returns a heap-allocated string.
+`get_string` returns a heap-allocated string.
 
-You must call:
+The caller is responsible for freeing the allocated memory to avoid memory leaks:
 
+```c
 free(name);
+```
 ## Build
-gcc main.c input.c -o program
+gcc cs50note.c -o program
 ## Motivation
 
 This project was created to build a robust and reusable input system in C, focusing on correctness, safety, and clarity beyond basic examples.
