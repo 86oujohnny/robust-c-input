@@ -73,7 +73,7 @@ get_string returns a heap-allocated string.
 You must call:
 
 free(name);
-Build
+## Build
 gcc main.c input.c -o program
 ## Motivation
 
