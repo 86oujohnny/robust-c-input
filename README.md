@@ -6,7 +6,7 @@ A minimal C library for safe and validated user input.
 
 ## Overview
 
-This project provides safer alternatives to common input functions such as `get_int` and `get_string`, with proper validation and error handling.
+This project provides a minimal and robust input handling library in C, offering safer alternatives to functions such as `get_int` and `get_string` with proper validation and error handling.
 
 It is designed to handle common edge cases in user input, including invalid characters, overflow, and incomplete input.
 
@@ -50,7 +50,6 @@ Prompts the user for a string:
 ```c
 #include <stdio.h>
 #include <stdlib.h>
-#include "input.h"
 
 int main(void)
 {
@@ -78,8 +77,13 @@ free(name);
 ```
 
 ## Build
+Compile the program using:
 ```bash
 gcc cs50note.c -o program
+```
+Run the program:
+```bash
+./program
 ```
 
 ## Motivation
